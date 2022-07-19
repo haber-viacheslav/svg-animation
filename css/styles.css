@@ -88,6 +88,7 @@ img {
 .svg-list {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 30px;
 }
 
@@ -100,8 +101,76 @@ img {
   border: 1px solid var(--grey-text);
   border-radius: 50%;
   color: #757575;
+  transition: color 500ms cubic-bezier(0.075, 0.82, 0.165, 1),
+  background-color 800ms cubic-bezier(0.075, 0.82, 0.165, 1),
+  border-color 250ms cubic-bezier(0.19, 1, 0.22, 1)
+}
+
+.svg-link:hover,
+.svg-link:focus {
+  color: var(--active-color);
+  border-color: var(--prime-white);
+  background-color: #292a2c;
+  
 }
 
 .social-icon {
   fill: currentColor;
+}
+
+.svg-link:nth-child(1) {
+  animation: firstAnimation 5000ms linear infinite alternate forwards;
+}
+
+.svg-link:nth-child(2) {
+  animation: secondAnimation 5000ms linear infinite alternate forwards;
+}
+
+/* .svg-link:nth-child(3) {
+  animation: forwards;
+}
+
+.svg-link:nth-child(4) {
+  animation: forwards;
+}
+
+.svg-link:nth-child(5) {
+  animation: forwards;
+}
+
+.svg-link:nth-child(6) {
+  animation: forwards;
+} */
+
+@keyframes firstAnimation {
+  0% {
+    background-color: pink;
+  }
+  30% {
+    background-color: #757575;
+  }
+  50%{
+    background-color: var(--active-color)
+  }
+  70% {
+    background-color: red;
+  }
+  90% {
+    background-color: black;
+  }
+  100% {
+    background-color: aqua;
+  }
+}
+
+@keyframes secondAnimation {
+  0% {
+    transform: rotate3d(0 deg);
+  }
+  50% {
+    transform: rotate3d(180 deg);
+  }
+  100% {
+    transform: rotate3d(360 deg);
+  }
 }
