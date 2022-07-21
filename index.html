@@ -163,44 +163,58 @@
 			<!-- Радио кнопки -->
 			<div class="group" role="group">
 				<h2 class="group-title">Уровень Вашей экспертизы</h2>
-				<input type="radio" name="position" value="junior" id="junior" checked />
-				<label for="junior">Junior</label>
 
-				<input type="radio" name="position" value="middle" id="moddle" />
-				<label for="middle">Middle</label>
-
-				<input type="radio" name="position" value="senior" id="senior" />
-				<label for="senior">Senior</label>
+				<ul class="list experience-options">
+					<li class="experience-item">
+						<input type="radio" name="position" value="junior" id="junior" checked />
+						<label for="junior">Junior</label>
+					</li>
+					<li class="experience-item">
+						<input type="radio" name="position" value="middle" id="moddle" />
+						<label for="middle">Middle</label>
+					</li>
+					<li class="experience-item">
+						<input type="radio" name="position" value="senior" id="senior" />
+						<label for="senior">Senior</label>
+					</li>
+				</ul>
 			</div>
 
 			<!-- Ограничение по дате и времени выбора -->
-			<label for="date">Дата доклада</label>
-			<input
-				type="datetime-local"
-				name="date"
-				id="date"
-				min="2022-07-18T12:30"
-				max="2022-07-20T12:30"
-			/>
-
+			<div class="form-field">
+				<label for="date">Дата доклада</label>
+				<input
+					type="datetime-local"
+					name="date"
+					id="date"
+					min="2022-07-18T12:30"
+					max="2022-07-20T12:30"
+					class="date"
+				/>
+			</div>
 			<!-- Загрузка файла -->
-			<label for="upload">Загрузите презентацию</label>
-			<input type="file" name="upload" id="upload" />
+			<div class="form-field">
+				<label for="upload">Загрузите презентацию</label>
+				<input type="file" name="upload" id="upload" />
+			</div>
 
 			<!-- Коментарий -->
-			<label for="comment">Добавьте коментарий</label>
-			<textarea
-				class="comment-text"
-				name="comment"
-				id=""
-				cols="40"
-				rows="5"
-				placeholder="Введите коментарий"
-			></textarea>
+			<div class="form-field">
+				<label for="comment">Добавьте коментарий</label>
+				<textarea
+					class="comment-text"
+					name="comment"
+					id=""
+					cols="40"
+					rows="5"
+					placeholder="Введите коментарий"
+				></textarea>
+			</div>
 			<!-- Кнопка подтверждения -->
-
-			<input type="checkbox" name="policy" id="policy" />
-			<label for="policy">Соглашаюсь на всё за еду</label>
+			<div class="foem">
+				<input type="checkbox" name="policy" id="policy" />
+				<label for="policy">Соглашаюсь на всё за еду</label>
+			</div>
 
 			<button type="submit" class="forn-btn">Send</button>
 		</form>
