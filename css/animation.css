@@ -1,0 +1,59 @@
+.container {
+	width: 1120px;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: repeat(4, auto);
+	gap: 32px;
+}
+
+.box {
+	position: relative;
+	width: 256px;
+	height: 256px;
+	background-color: bisque;
+	animation-name: scale-item;
+	animation-duration: 2000ms;
+	animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.box::after {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	content: "";
+	width: 236px;
+	height: 236px;
+	border: 1px dotted black;
+	animation-name: border-animate;
+	animation-duration: 1000ms;
+
+	animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+@keyframes scale-item {
+	0% {
+		transform: scale(0.25);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+
+@keyframes border-animate {
+	0% {
+		border-style: dotted;
+	}
+	100% {
+		border-style: dashed;
+	}
+}
+
+.text {
+	display: block;
+	padding: 10px;
+	background-color: red;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}

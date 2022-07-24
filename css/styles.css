@@ -103,6 +103,7 @@ img {
 	border: 1px solid var(--grey-text);
 	border-radius: 50%;
 	color: #757575;
+	animation: transormAnimation 10000ms linear infinite forwards;
 	transition: color 500ms cubic-bezier(0.075, 0.82, 0.165, 1),
 		background-color 800ms cubic-bezier(0.075, 0.82, 0.165, 1),
 		border-color 250ms cubic-bezier(0.19, 1, 0.22, 1);
@@ -123,9 +124,9 @@ img {
 	animation: firstAnimation 5000ms linear infinite alternate forwards;
 }
 
-.svg-link:nth-child(2) {
+/* .svg-link:nth-child(2) {
 	animation: secondAnimation 5000ms linear infinite alternate forwards;
-}
+} */
 
 /* .svg-link:nth-child(3) {
   animation: forwards;
@@ -170,15 +171,15 @@ img {
 	}
 }
 
-@keyframes secondAnimation {
+@keyframes transormAnimation {
 	0% {
-		transform: rotate3d(0 deg);
+		transform: rotate3d(0);
 	}
 	50% {
-		transform: rotate3d(180 deg);
+		transform: rotate3d(180deg);
 	}
 	100% {
-		transform: rotate3d(360 deg);
+		transform: rotate3d(360deg);
 	}
 }
 
