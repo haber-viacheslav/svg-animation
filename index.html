@@ -220,6 +220,67 @@
 			<button type="submit" class="forn-btn">Send</button>
 		</form>
 
+		<!-- Форма практика -->
+
+		<form class="form form__practise" name="modal-form" autocomplete="off" novalidate>
+			<label class="form-group">
+				<span class="form-label">Name</span>
+				<input type="text" name="user-name" placeholder="Alex Black" />
+			</label>
+			<label class="form-group" for="phone-number">
+				<span class="form-label">Phone</span>
+			</label>
+			<input
+				class="form-input"
+				type="tуд"
+				name="phone"
+				id="phone-number"
+				placeholder="+38 (000) 000 00 00"
+			/>
+			<label class="form-group">
+				<span class="form-label">Name</span>
+				<input
+					type="password"
+					name="password"
+					placeholder="123-(*&^%$#@"
+					minlength="8"
+					maxlength="24"
+				/>
+			</label>
+
+			<div>
+				<p class="choose">Choose payment system</p>
+
+				<label>
+					<span>Visa</span>
+					<input type="radio" name="user-payment" value="visa" checked />
+				</label>
+				<label>
+					<span>Master-card</span>
+					<input type="radio" name="user-payment" value="master-card" />
+				</label>
+			</div>
+
+			<label>
+				<input type="checkbox" name="user-policy" value="policy" />
+				<span>I agree to Privacy policy</span>
+			</label>
+			<label>
+				<input type="checkbox" name="user-cookies" value="cookies" />
+				<span>I agree to Cookies</span>
+			</label>
+
+			<label>
+				<input type="checkbox" name="user-license" value="license" />
+				<span>I agree to License</span>
+			</label>
+
+			<input type="number" name="user-quantity" value="0" min="0" max="20" step="0.1" />
+
+			<button type="submit">submit</button>
+			<button type="reset">reset</button>
+		</form>
+
 		<div class="container-animation">
 			<div class="box"><p class="text">text</p></div>
 			<div class="box"><p class="text">text</p></div>
