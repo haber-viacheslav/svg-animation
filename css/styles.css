@@ -103,7 +103,7 @@ img {
 	border: 1px solid var(--grey-text);
 	border-radius: 50%;
 	color: #757575;
-	animation: transormAnimation 10000ms linear infinite forwards;
+	animation: transformAnimation 10000ms linear infinite forwards;
 	transition: color 500ms cubic-bezier(0.075, 0.82, 0.165, 1),
 		background-color 800ms cubic-bezier(0.075, 0.82, 0.165, 1),
 		border-color 250ms cubic-bezier(0.19, 1, 0.22, 1);
@@ -171,7 +171,7 @@ img {
 	}
 }
 
-@keyframes transormAnimation {
+@keyframes transformAnimation {
 	0% {
 		transform: rotate(0);
 	}
