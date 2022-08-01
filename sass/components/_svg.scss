@@ -1,0 +1,56 @@
+.svg-list {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 30px;
+}
+
+.svg-link {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 50px;
+	height: 50px;
+	border: 1px solid $grey-text;
+	border-radius: 50%;
+	color: $grey-text;
+	animation: transformAnimation 10000ms linear infinite forwards;
+	transition: color 500ms cubic-bezier(0.075, 0.82, 0.165, 1),
+		background-color 800ms cubic-bezier(0.075, 0.82, 0.165, 1),
+		border-color 250ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.svg-link:hover,
+.svg-link:focus {
+	color: $active-color;
+	border-color: $prime-white;
+	background-color: #292a2c;
+}
+
+.social-icon {
+	fill: currentColor;
+}
+
+.svg-link:nth-child(1) {
+	animation: firstAnimation 5000ms linear infinite alternate forwards;
+}
+
+.svg-link:nth-child(2) {
+	animation: transormAnimation 5000ms linear infinite alternate forwards;
+}
+
+/* .svg-link:nth-child(3) {
+  animation: forwards;
+}
+
+.svg-link:nth-child(4) {
+  animation: forwards;
+}
+
+.svg-link:nth-child(5) {
+  animation: forwards;
+}
+
+.svg-link:nth-child(6) {
+  animation: forwards;
+} */

@@ -1,0 +1,25 @@
+/* =======================
+||						  ||
+||	All list of main page ||
+||						  ||
+  ======================== */
+.peculiarities__items,
+.doing__items,
+.team__members,
+.clients__items {
+	display: flex;
+	gap: 30px;
+	align-items: center;
+}
+
+/* h2 title for sections */
+
+.title {
+	margin-bottom: 50px;
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 1.17;
+	text-align: center;
+	letter-spacing: 0.03em;
+	color: $prime-color;
+}

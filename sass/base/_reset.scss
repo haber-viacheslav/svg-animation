@@ -1,0 +1,66 @@
+
+body {
+	font-family: $main-font;
+	font-size: 14px;
+	color: $prime-color;
+	letter-spacing: 0.03em;
+}
+
+
+
+
+/* reset */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+img {
+	display: block;
+}
+
+/* Utils */
+
+.no-scroll {
+	overflow: hidden;
+}
+
+.link {
+	text-decoration: none;
+	font-family: inherit;
+}
+
+.list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+/* Hidden */
+
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
+// No-user-select!!!
+
+.no-user-select {
+	user-select: none;
+}

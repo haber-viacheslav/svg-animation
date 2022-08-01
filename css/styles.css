@@ -46,10 +46,6 @@ img {
 	padding-bottom: 94px;
 }
 
-.section.no-top-padding {
-	padding-top: 0;
-}
-
 .container {
 	width: 1200px;
 	margin-right: auto;
