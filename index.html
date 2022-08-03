@@ -19,7 +19,7 @@
 		<title>SVG</title>
 	</head>
 	<body>
-		<!-- <section class="section icons-svg">
+		<section class="section icons-svg">
 			<div class="container">
 				<ul class="svg-list list">
 					<li class="svg-item">
@@ -102,9 +102,11 @@
 					</li>
 				</ul>
 			</div>
-		</section> -->
+		</section>
+
 		<!-- Форма -->
-		<!-- <form class="form js-speaker-form">
+
+		<form class="form js-speaker-form">
 			<div class="form-field">
 				<label for="name">User name</label>
 				<input
@@ -137,10 +139,10 @@
 					placeholder="myemail@gmail.com"
 					autocomplete="email"
 				/>
-			</div> -->
+			</div>
 
-		<!-- Чекбоксы -->
-		<!-- <div role="group" class="group">
+			<!-- Чекбоксы -->
+			<div role="group" class="group">
 				<h2 class="group-title">Тема доклада</h2>
 
 				<ul class="list topic-options">
@@ -159,10 +161,10 @@
 						<label for="js">JS</label>
 					</li>
 				</ul>
-			</div> -->
+			</div>
 
-		<!-- Радио кнопки -->
-		<!-- <div class="group" role="group">
+			<!-- Радио кнопки -->
+			<div class="group" role="group">
 				<h2 class="group-title">Уровень Вашей экспертизы</h2>
 
 				<ul class="list experience-options">
@@ -179,10 +181,10 @@
 						<label for="senior">Senior</label>
 					</li>
 				</ul>
-			</div> -->
+			</div>
 
-		<!-- Ограничение по дате и времени выбора -->
-		<!-- <div class="form-field">
+			<!-- Ограничение по дате и времени выбора -->
+			<div class="form-field">
 				<label for="date">Дата доклада</label>
 				<input
 					type="datetime-local"
@@ -192,15 +194,15 @@
 					max="2022-07-20T12:30"
 					class="date"
 				/>
-			</div> -->
-		<!-- Загрузка файла -->
-		<!-- <div class="form-field">
+			</div>
+			<!-- Загрузка файла -->
+			<div class="form-field">
 				<label for="upload">Загрузите презентацию</label>
 				<input type="file" name="upload" id="upload" />
-			</div> -->
+			</div>
 
-		<!-- Коментарий -->
-		<!-- <div class="form-field">
+			<!-- Коментарий -->
+			<div class="form-field">
 				<label for="comment">Добавьте коментарий</label>
 				<textarea
 					class="comment-text"
@@ -210,17 +212,17 @@
 					rows="5"
 					placeholder="Введите коментарий"
 				></textarea>
-			</div> -->
-		<!-- Кнопка подтверждения -->
-		<!-- <div class="foem">
+			</div>
+			<!-- Кнопка подтверждения -->
+			<div class="foem">
 				<input type="checkbox" name="policy" id="policy" />
 				<label for="policy">Соглашаюсь на всё за еду</label>
 			</div>
 
 			<button type="submit" class="forn-btn">Send</button>
-		</form> -->
+		</form>
 
-		<!-- Форма практика
+		<!-- Форма практика -->
 
 		<form class="form form__practise" name="modal-form" autocomplete="off" novalidate>
 			<label class="form-group">
@@ -279,10 +281,10 @@
 
 			<button type="submit">submit</button>
 			<button type="reset">reset</button>
-		</form> -->
+		</form>
 
 		<!-- Animations -->
-		<!-- <div class="container-animation">
+		<div class="container-animation">
 			<div class="box"><p class="text">text</p></div>
 			<div class="box"><p class="text">text</p></div>
 			<div class="box"><p class="text">text</p></div>
@@ -314,10 +316,10 @@
 			<div class="box-1"><p class="box-text">box-10</p></div>
 			<div class="box-1"><p class="box-text">box-11</p></div>
 			<div class="box-1"><p class="box-text">box-12</p></div>
-		</div> -->
+		</div>
 
 		<section class="section">
-			<!-- <form class="form form__modal" autocomplete="off" novalidate>
+			<form class="form form__modal" autocomplete="off" novalidate>
 				<button class="close-btn form__close-btn" type="button">
 					<svg class="form__icon" width="25" height="25">
 						<use href="./images/icons-2.svg#icon-close"></use>
@@ -358,9 +360,9 @@
 							maxlength="12"
 						/>
 					</label>
- 							-->
-			<!-- Radio input -->
-			<!-- 
+
+					<!-- Radio input -->
+
 					<div class="form__radio-wrp">
 						<strong>Chose payment way</strong>
 						<label for="">
@@ -371,11 +373,11 @@
 							<span>Mastercard</span>
 							<input type="radio" name="user-payment" value="mastercard" />
 						</label>
-					</div> -->
+					</div>
 
-			<!-- Checkbox -->
+					<!-- Checkbox -->
 
-			<!-- <div class="form__checkbox-wrp">
+					<div class="form__checkbox-wrp">
 						<label class="form__checkbox-label">
 							<input type="checkbox" name="user-policy" value="privacy-policy" />
 							<span>I agree to Privacy policy</span>
@@ -423,7 +425,7 @@
 					<button class="btn form__submit-btn" type="submit">send</button>
 					<button class="btn form__reset-btn" type="reset">reset</button>
 				</div>
-			</form> -->
+			</form>
 
 			<form class="form">
 				<strong>Оставьте свои данные</strong>
@@ -442,6 +444,96 @@
 					</label>
 				</div>
 			</form>
+		</section>
+
+		<!-- Contacts section -->
+		<section class="contacts section" id="contacts">
+			<div class="container contatcs-container">
+				<div class="contacts-left-side">
+					<h2 class="section-title section-title-mode-dark">Онлайн-запись</h2>
+					<form class="contact-form" name="contact-form">
+						<div class="contact-form-wrap">
+							<label class="contact-form-group">
+								<input
+									class="contact-form-input"
+									type="text"
+									name="user-name"
+									placeholder="Antony Black"
+									required
+									minlength="3"
+								/>
+								<span class="contact-form-label">Имя*</span>
+								<svg class="contact-form-icon" width="20" height="20">
+									<use class="contact-form-warning" href="./images/icons.svg#icon-warning"></use>
+									<use class="contact-form-success" href="./images/icons.svg#icon-success"></use>
+								</svg>
+								<span class="contact-form-notfication">Укажите минимум 3 символа</span>
+							</label>
+							<label class="contact-form-group">
+								<input
+									class="contact-form-input"
+									type="tel"
+									name="user-phone"
+									placeholder="+38 099 123-45-67"
+									required
+									maxlength="12"
+								/>
+								<span class="contact-form-label">Телефон*</span>
+								<svg class="contact-form-icon" width="20" height="20">
+									<use class="contact-form-warning" href="./images/icons.svg#icon-warning"></use>
+									<use class="contact-form-success" href="./images/icons.svg#icon-success"></use>
+								</svg>
+								<span class="contact-form-notfication">
+									Укажите номер в формате +38 099 123-45-67
+								</span>
+							</label>
+						</div>
+						<label class="contact-form-group">
+							<textarea
+								class="contact-form-message"
+								name="user-message"
+								rows="5"
+								placeholder=" "
+							></textarea>
+							<span class="contact-form-label">сообщение</span>
+						</label>
+						<button class="contact-form-btn btn btn-mode-dark" type="submit">отправить</button>
+					</form>
+				</div>
+				<div class="contacts-group">
+					<h2 class="section-title section-title-mode-dark">Контакты</h2>
+					<address class="contacts-address">
+						<ul class="contacts-list list">
+							<li class="contacts-item">
+								<a
+									class="contacts-link link"
+									href="https://goo.gl/maps/46dUfQWJNFQiRmkx6"
+									target="_blank"
+									rel="noopener noreferrer"
+								>
+									ул. Васильковая, 7А Киев, 08132
+								</a>
+							</li>
+							<li class="contacts-item">
+								<a class="contacts-link link" href="tel:+380441111111">+38 044 111 11 11</a>
+							</li>
+							<li class="contacts-item">
+								<a class="contacts-link link" href="mailto:barbershop@email.com">
+									barbershop@email.com
+								</a>
+							</li>
+						</ul>
+					</address>
+
+					<p class="contacts-schedule uppertitle uppertitle-mode-dark">время работы</p>
+					<p class="contacts-time">
+						Ежедневно с
+						<time datatime="09:00">9:00</time>
+						до
+						<time datatime="22:00">22:00</time>
+					</p>
+				</div>
+			</div>
 		</section>
 		<script>
 			(() => {
